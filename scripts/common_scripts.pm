@@ -18,7 +18,6 @@ sub parse_exp_file {
 	my @sample_names;
 	my @exp_names;
 	
-#	open($EXP,'<',"/cluster/home/nmr07003/Termseq/rerun_noVanco/mapping_example_experiment_file.exp");#$exp_file_path) or die "can't open experiment file $exp_file_path\n";
 	open($EXP,'<',"/cluster/home/nmr07003/Termseq/review_round2/pooled_bam/mapping_example_experiment_file.exp");#$exp_file_path) or die "can't open experiment file $exp_file_path\n";
 	while (my $sample_line = <$EXP>) { 
 		chomp $sample_line; 
@@ -33,7 +32,6 @@ sub parse_exp_file {
 	my @s2_file_paths;
 	foreach ($i=0; $i<=$#exp_names; $i++) { 
 		my $exp_type = $exp_names[$i];
-#		my $s2_path = "/cluster/home/nmr07003/Termseq/output/$exp_run_dirs[$i].s2"; 
                 my $s2_path = "/cluster/home/nmr07003/Termseq/review_round2/pooled_bam/pipeline_coverages/$exp_run_dirs[$i].s2";
 		`sort -k3,3 -n $s2_path > $s2_path.sorted`;
 		push @s2_file_paths,$s2_path;
