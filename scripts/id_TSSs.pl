@@ -31,7 +31,7 @@ my $basic_usage = qq^
 # -annot <string>       : Genome annotation file (optional after setting default)
 # -max_5utr_len <int>   : Maximum length upstream of translational start (default: 500)
 # -min_cov <int>        : Minimum TAP/Processed coverage (default: 2)
-# -man_ratio <int>      : Minimum TAP/noTAP|Processsed/unprocessed ratio (default: 1)
+# -min_ratio <int>      : Minimum TAP/noTAP|Processsed/unprocessed ratio (default: 1)
 # -help                 : Print basic usage
 # 
 # Typical usage:
