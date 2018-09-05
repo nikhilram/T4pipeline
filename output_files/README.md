@@ -5,13 +5,19 @@ Track 1 : Log transformed paired-end RNA-Seq coverage across the plus strand []
 Track 2 : Log transformed paired-end RNA-Seq coverage across the minus strand [] 
 
 Track 3 : Complex operons plus strand[]
+
           multiTSS operons plus strand []
+
           multiTTS operons plus strand []
+          
           Traditional operons plus strand []
 
 Track 4 : Complex operons minus strand[]
+          
           multiTSS operons minus strand []
+          
           multiTTS operons minus strand []
+          
           Traditional operons minus strand []         
 
 Track 5 : Novel, putative candidate regulatory elements []
