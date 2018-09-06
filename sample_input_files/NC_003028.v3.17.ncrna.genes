@@ -1,0 +1,67 @@
+NC_003028       197     1558    +       chromosomal replication initiator protein DnaA  SP_0001 SP_RS00005      WP_000660618.1          0
+NC_003028       1717    2853    +       DNA polymerase III subunit beta SP_0002 SP_RS00010      WP_000581157.1          0
+NC_003028       2918    3112    +       DUF951 family protein   SP_RS00015              WP_000285194.1          0
+NC_003028       3196    4311    +       redox-regulated ATPase YchF     SP_0004 SP_RS00020      WP_001218714.1          0
+NC_003028       4382    4951    +       peptidyl-tRNA hydrolase SP_0005 SP_RS00025      WP_000163932.1          0
+NC_003028       4952    8461    +       transcription-repair coupling factor    SP_0006 SP_RS00030      WP_000258094.1          0
+NC_003028       8519    8785    +       RNA-binding S4 domain-containing protein        SP_0007 SP_RS00035      WP_001234978.1          0
+NC_003028       8778    9146    +       septum formation initiator family protein       SP_0008 SP_RS00040      WP_000041909.1          0
+NC_003028       9266    10534   +       serine hydrolase        SP_0010 SP_RS00050      WP_001224760.1          0
+NC_003028       10531   11808   +       tRNA lysidine(34) synthetase TilS       SP_0011 SP_RS00055      WP_001208979.1          0
+NC_003028       11812   12354   +       hypoxanthine-guanine phosphoribosyltransferase  SP_0012 SP_RS00060      WP_000892185.1          0
+NC_003028       12370   14328   +       ATP-dependent zinc metalloprotease FtsH SP_0013 SP_RS00065      WP_000744538.1          0
+NC_003028       14450   14929   +       sigma-70 family RNA polymerase sigma factor     SP_0014 SP_RS00070      WP_000588925.1          0
+NC_003028       15023   15094   +       tRNA-Glu        SP_2242 SP_RS00075                      0
+NC_003028       15349   16900   +       16S ribosomal RNA       SP_rrnaA16S     SP_RS00080                      0
+NC_003028       16945   17017   +       tRNA-Ala        SP_2243 SP_RS00085                      0
+NC_003028       17141   20044   +       23S ribosomal RNA       SP_rrnaA23S     SP_RS00090                      0
+NC_003028       17154   17307   +       nc_RNA  5_8S_rRNA       1.8e-08
+NC_003028       20120   20235   +       5S ribosomal RNA        SP_rrnaA5S      SP_RS00095              RFAM:RF00001    0
+NC_003028       20241   20314   +       tRNA-Asn        SP_2244 SP_RS00100                      0
+NC_003028       20422   21267   +       IS630 family transposase        SP_RS11515                              0
+NC_003028       21302   22105   -       ISL3 family transposase SP_0017 SP_RS11520                      0
+NC_003028       22359   22601   +       hypothetical protein    SP_0018 SP_RS00130      WP_010963185.1          0
+NC_003028       22832   24118   +       adenylosuccinate synthetase     SP_0019 SP_RS00135      WP_000205044.1          0
+NC_003028       24165   24262   +       ccnC    csRNA   1.1e-13 acebo_t trn0012
+NC_003028       24319   24786   +       nucleoside deaminase    SP_0020 SP_RS00140      WP_000291875.1          0
+NC_003028       24819   24916   +       nc_RNA  Bacteria_small_SRP      4.4e-13
+NC_003028       24973   25416   +       dUTP diphosphatase      SP_0021 SP_RS00145      WP_000701992.1          0
+NC_003028       25355   25933   +       histidine phosphatase family protein    SP_0022 SP_RS00150      WP_010976368.1          0
+NC_003028       25947   27308   +       DNA repair protein RadA SP_RS00155              WP_074017595.1          0
+NC_003028       27312   27878   +       carbonic anhydrase      SP_0024 SP_RS00160      WP_001843998.1          0
+NC_003028       27903   28112   +       hypothetical protein    SP_0025 SP_RS00165      WP_001850309.1          0
+NC_003028       28094   28717   +       PrsW family intramembrane metalloprotease       SP_0026 SP_RS00170      WP_001827117.1          0
+NC_003028       28862   29830   +       ribose-phosphate pyrophosphokinase 1    SP_0027 SP_RS00175      WP_000010163.1          0
+NC_003028       29766   30245   -       transposase     SP_RS00180              WP_000436596.1          0
+NC_003028       30304   30382   -       nc_RNA  mir-2024        5.7e-06
+NC_003028       30372   30710   -       damage-inducible protein CinA   SP_0029 SP_RS00185      WP_076709031.1          0
+NC_003028       30598   30841   -       competence protein      SP_0030 SP_RS11530                      0
+NC_003028       30929   31279   -       ribose-phosphate pyrophosphokinase      SP_0031 SP_RS00190      WP_060544779.1          0
+NC_003028       31535   34168   +       DNA polymerase I        SP_0032 SP_RS00195      WP_001808750.1          0
+NC_003028       34253   34690   +       CoA-binding protein     SP_0033 SP_RS00200      WP_000076479.1          0
+NC_003028       34731   35012   +       hypothetical protein    SP_RS00205              WP_001827121.1          0
+NC_003028       35009   36019   -       putative sulfate exporter family transporter    SP_0034 SP_RS00210      WP_000009144.1          0
+NC_003028       36168   37337   +       pyridoxal phosphate-dependent aminotransferase  SP_0035 SP_RS00215      WP_000366370.1          0
+NC_003028       37334   38104   +       DNA repair protein RecO SP_0036 SP_RS00220      WP_000616164.1          0
+NC_003028       38101   39093   +       phosphate acyltransferase       SP_0037 SP_RS00225      WP_000717458.1          0
+NC_003028       39099   39332   +       acyl carrier protein    SP_0038 SP_RS00230      WP_000136447.1          0
+NC_003028       39363   39668   +       IS5/IS1182 family transposase   SP_0039 SP_RS00235                      0
+NC_003028       39871   40101   +       ComC/BlpC family peptide pheromone/bacteriocin  SP_0041 SP_RS00240      WP_001093487.1          0
+NC_003028       40336   40380   +       mann    F52     0
+NC_003028       40816   42969   +       bacteriocin cleavage/export ABC transporter     SP_0042 SP_RS00255      WP_000668284.1          0
+NC_003028       42982   44331   +       transporter ComB        SP_0043 SP_RS00260      WP_000801611.1          0
+NC_003028       44459   45208   +       phosphoribosylaminoimidazolesuccinocarboxamide synthase SP_0044 SP_RS00265      WP_012386583.1          0
+NC_003028       45210   45353   +       hypothetical protein    SP_RS11535              WP_050167432.1          0
+NC_003028       45410   49135   +       phosphoribosylformylglycinamidine synthase      SP_0045 SP_RS00270      WP_000361188.1          0
+NC_003028       49228   50670   +       amidophosphoribosyltransferase  SP_0046 SP_RS00275      WP_000220637.1          0
+NC_003028       50889   51911   +       phosphoribosylformylglycinamidine cyclo-ligase  SP_0047 SP_RS00280      WP_001284589.1          0
+NC_003028       51908   52453   +       phosphoribosylglycinamide formyltransferase     SP_0048 SP_RS00285      WP_000717501.1          0
+NC_003028       52537   53046   +       VanZ family protein     SP_0049 SP_RS00290      WP_000894006.1          0
+NC_003028       53071   54618   +       bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/inosine monophosphate cyclohydrolase     SP_0050 SP_RS00295      WP_000167081.1          0
+NC_003028       54740   56002   +       phosphoribosylamine--glycine ligase     SP_0051 SP_RS00300      WP_000772229.1          0
+NC_003028       56075   56242   +       hypothetical protein    SP_RS11540              WP_000498911.1          0
+NC_003028       56084   56177   +       nc_RNA  SSRC8_2 2.9e-09
+NC_003028       56259   56375   +       hypothetical protein    SP_0052 SP_RS11545      WP_001809271.1          0
+NC_003028       56298   56355   +       nc_RNA  SSRC8_2 2.5e-08
+NC_003028       56405   56893   +       5-(carboxyamino)imidazole ribonucleotide mutase SP_0053 SP_RS00305      WP_000805601.1          0
+NC_003028       56880   57971   +       5-(carboxyamino)imidazole ribonucleotide synthase       SP_0054 SP_RS00310      WP_000099054.1          0
