@@ -31,3 +31,7 @@ Perl scripts and modules used to identify the transcription start and terminatio
 #        perl id_TSS.pl -files <.s2> -fasta <.fasta> -annot <.genes>
 ############################################################################################################
  ```
+Example
+```
+id_TSS.pl -files *TAP.s2 -fasta NC_003028.v3.17.fasta -annot NC_003028.v3.17.ncrna.genes
+```
