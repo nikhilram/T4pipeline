@@ -43,5 +43,6 @@ Example -
 ```
 id_possible_secondary_TSS.pl -files *TAP.s2 -TSSs TSS_candidate.100.4 
 ```
+```id_possible_secondary_TSS.pl -help``` for basic usage.
 
 Prints out putative secondary TSSs wherever identified within the maximum 5'-UTR length that isn't a predicted primary TSS for an upstream gene.
