@@ -1,6 +1,7 @@
 #!/usr/bin/perl -w
 
 use warnings;
+use strict;
 
 use common_scripts;
 use genes_scripts;
@@ -49,21 +50,21 @@ if(!@ARGV){print "$basic_usage\n";
            exit;}
 
 GetOptions(
-        'files=s{1,}' => \@file,
-	'TSSs=s' => \$tss_in,
-        'fasta:s' => \$contig_in,
-        'annot:s' => \$genesfile_in,
-        'max_5utr_len:i' => \$max_5utr_len_in,
-        'min_cov:i' => \$min_cov,
-        'min_ratio:i' => \$min_rat,
-        'help|h' => \$help) or die("$basic_usage\n");
+        'files=s{1,}' => \ my @file,
+	'TSSs=s' => \ my $tss_in,
+        'fasta:s' => \ my $contig_in,
+        'annot:s' => \ my $genesfile_in,
+        'max_5utr_len:i' => \ my $max_5utr_len_in,
+        'min_cov:i' => \ my $min_cov,
+        'min_ratio:i' => \ my $min_rat,
+        'help|h' => \ my $help) or die("$basic_usage\n");
 
 
 if (defined $help) {
 print("$basic_usage\n");
 exit;
 }
-
+my %tss;
 open (TSS, $tss_in);
 while (<TSS>){
 	my @line = split(/\t/);
@@ -154,6 +155,7 @@ foreach my $gene_obj (@{$genes_array_ref}) {
 	my $t = $gene_obj->{_to};
 	my $stra = $gene_obj->{_st};
 	my $pos = $gene_obj->{_seq_data}->{_5end}->{_sense}->{_5utr}=>;
+	my ($fr_5UTR, $to_5UTR, %hits, %ratios);
 	if ($stra eq '+') {
                 ($fr_5UTR,$to_5UTR) = ($fro - $max_5utr_len,$fro);
         }
@@ -176,14 +178,15 @@ foreach my $gene_obj (@{$genes_array_ref}) {
 }
 
 	if(%hits){
-        @positions = sort {$hits{$a} <=> $hits{$b}} keys %hits;
-        $max_pos = $positions[-1];
-	$max_cov = $hits{$max_pos};
-	$max_ratio = $ratios{$max_cov};
-	foreach $p (@positions){
+        my @positions = sort {$hits{$a} <=> $hits{$b}} keys %hits;
+        my $max_pos = $positions[-1];
+	my $max_cov = $hits{$max_pos};
+	my $max_ratio = $ratios{$max_cov};
+	my (%sec_tss, $pos_cov, $pos_ratio, %sec_Ratio, @sec_positions);
+	foreach my $p (@positions){
 	 if($p >= $max_pos + 10 or $p <= $max_pos - 10){
-		$pos_cov = $hits{$p};
-		$pos_ratio = $ratios{$pos_cov};
+		my $pos_cov = $hits{$p};
+		my $pos_ratio = $ratios{$pos_cov};
 		$sec_tss{$p}=$pos_cov;
 		$sec_Ratio{$pos_cov}=$pos_ratio;
 	  } else {
@@ -192,9 +195,10 @@ foreach my $gene_obj (@{$genes_array_ref}) {
 	}
 	if(%sec_tss){
 	@sec_positions = sort {$sec_tss{$a} <=> $sec_tss{$b}} keys %sec_tss;
-	$secondary_tss = $sec_positions[-1];
-	$secondary_cov = $sec_tss{$secondary_tss};
-	$secondary_ratio = $sec_Ratio{$secondary_cov};
+	my $secondary_tss = $sec_positions[-1];
+	my $secondary_cov = $sec_tss{$secondary_tss};
+	my $secondary_ratio = $sec_Ratio{$secondary_cov};
+	my ($primary_dist, $secondary_dist);
 	if ($stra eq '+'){
                         $primary_dist = $fro - $max_pos;
 			$secondary_dist = $fro - $secondary_tss;
