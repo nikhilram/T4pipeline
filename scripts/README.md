@@ -10,6 +10,8 @@ id_TSSs.pl -files *TAP.s2 -fasta NC_003028.v3.17.fasta -annot NC_003028.v3.17.nc
 ```
 ```id_TSSs.pl -help``` for basic usage. 
 
+This will generate a table with the TSS predictions for each feature in the annotation. If there is a predicted TSS upstream of a feature, the the row includes the TSS position, whether the TSS is intergenic or within the coding region, the processe/unprocessed ratio, processed coverage, and the unprocessed coverage. If there is not predicted TSS with the defined cutoff, the row reads Unknown_TSS.
+
 
 
 ## TTS prediction -
