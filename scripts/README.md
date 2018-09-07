@@ -3,35 +3,11 @@ Perl scripts and modules used to identify the transcription start and terminatio
 
 [id_TSSs.pl](https://github.com/nikhilram/T4pipeline/blob/master/scripts/id_TSSs.pl) was used to identify the transcription start sites.    
 
-```
-############################################################################################################
-#		
-#						Id TSSs
-#
-############################################################################################################
-#
-# Required:
-#
-# -files <string>       : 5' end coverage files (.s2)
-#
-##
-############################################################################################################
-#
-# Optional :
-#
-# -fasta <string>       : Genome fasta file (optional after setting default)
-# -annot <string>       : Genome annotation file (optional after setting default)
-# -max_5utr_len <int>   : Maximum length upstream of translational start (default: 500)
-# -min_cov <int>        : Minimum TAP/Processed coverage (default: 2)
-# -min_ratio <int>      : Minimum TAP/noTAP|Processsed/unprocessed ratio (default: 1)
-# -help                 : Print basic usage
-# 
-# Typical usage:
-#
-#        perl id_TSS.pl -files <.s2> -fasta <.fasta> -annot <.genes>
-############################################################################################################
- ```
 Example
 ```
-id_TSS.pl -files *TAP.s2 -fasta NC_003028.v3.17.fasta -annot NC_003028.v3.17.ncrna.genes
+id_TSSs.pl -files *TAP.s2 -fasta NC_003028.v3.17.fasta -annot NC_003028.v3.17.ncrna.genes
 ```
+```id_TSSs.pl -help``` for basic usage. 
+
+
+[id_TTSs.pl](https://github.com/nikhilram/T4pipeline/blob/master/scripts/id_TTSs.pl) was used to identify the transcription termination sites downstream of the annotated genes
