@@ -3,7 +3,7 @@ Perl scripts and modules used to identify the transcription start and terminatio
 
 [id_TSSs.pl](https://github.com/nikhilram/T4pipeline/blob/master/scripts/id_TSSs.pl) was used to identify the transcription start sites.    
 
-     
+'''''
 ############################################################################################################
 #		
 #						Id TSSs
@@ -31,4 +31,4 @@ Perl scripts and modules used to identify the transcription start and terminatio
 #        perl id_TSS.pl -files <.s2> -fasta <.fasta> -annot <.genes>
 ############################################################################################################
  
-
+ '''''
