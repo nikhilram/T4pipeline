@@ -37,7 +37,7 @@ my $basic_usage = qq^
 # 
 # Typical usage:
 #
-#        perl id_TTS.pl -files <.s2> -fasta <.fasta> -annot <.genes>
+#        perl id_TTS.pl -files <.3p> -fasta <.fasta> -annot <.genes>
 ############################################################################################################
  
 ^;
