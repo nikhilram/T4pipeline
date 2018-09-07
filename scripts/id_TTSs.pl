@@ -1,4 +1,6 @@
 #!/usr/bin/perl -w 
+use strict;
+use warnings;
 use List::Util qw( min max );
  
 #Modules
@@ -44,12 +46,12 @@ if(!@ARGV){print "$basic_usage\n";
            exit;}
 
 GetOptions(
-        'files=s{1,}' => \@file,
-        'fasta:s' => \$contig_in,
-        'annot:s' => \$genesfile_in,
-        'max_3utr_len:i' => \$max_3utr_len_in,
-        'min_cov:i' => \$min_cov_in,
-        'help|h' => \$help) or die("$basic_usage\n");
+        'files=s{1,}' => \ my @file,
+        'fasta:s' => \ my $contig_in,
+        'annot:s' => \ my $genesfile_in,
+        'max_3utr_len:i' => \ my $max_3utr_len_in,
+        'min_cov:i' => \ my $min_cov_in,
+        'help|h' => \ my $help) or die("$basic_usage\n");
 
 
 if (defined $help) {
@@ -102,6 +104,11 @@ foreach my $gene_obj (@genes_array) {
         else {
                 ($fr_3UTR,$to_3UTR) = ($fr - $max_3UTR,$fr);
         }
+        my %hits;
+        my @positions;
+        my $max_pos;
+        my $max_cov;
+        my $len;
         my @pillars_in_bounds = grep {$_ >= $fr_3UTR and $_ <= $to_3UTR and $pillar_hash{$_}{'_st'} ne $strand} @pillar_positions;
         my @pillars_in_bounds_sec = grep {$_ >= $fr_3UTR and $_ <= $to_3UTR and $secondary_pillar_hash{$_}{'_st'} ne $strand} @pillar_positions_secondary;
 	if(@pillars_in_bounds){
