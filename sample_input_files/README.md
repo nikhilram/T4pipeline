@@ -33,8 +33,8 @@ NC_003028       13      2       +
 
 [NC_003028.pooled-both.termseq.3p](https://github.com/nikhilram/T4pipeline/blob/master/sample_input_files/NC_003028.pooled-both.termseq.3p)  : Single nucleotide coverage from the 5' end of the 3' end reads generated
 ```
-NC_003028 18	+	3
-NC_003028 48	-	1
+NC_003028	18	+	3
+NC_003028	48	-	1
 NC_003028	49	-	3
 NC_003028	50	-	4
 NC_003028	51	-	1
