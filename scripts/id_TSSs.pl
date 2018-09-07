@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w 
-#use strict;
-#use warnings;
+use strict;
+use warnings;
 
 use common_scripts;
 use genes_scripts; 
@@ -45,13 +45,13 @@ if(!@ARGV){print "$basic_usage\n";
            exit;}
 
 GetOptions(
-        'files=s{1,}' => \@file,
-        'fasta:s' => \$contig_in,
-        'annot:s' => \$genesfile_in,
-        'max_5utr_len:i' => \$max_5utr_len_in,
-        'min_cov:i' => \$min_cov,
-        'min_ratio:i' => \$min_rat,
-        'help|h' => \$help) or die("$basic_usage\n");
+        'files=s{1,}' => \ my @file,
+        'fasta:s' => \ my $contig_in,
+        'annot:s' => \ my $genesfile_in,
+        'max_5utr_len:i' => \ my $max_5utr_len_in,
+        'min_cov:i' => \ my $min_cov,
+        'min_ratio:i' => \ my $min_rat,
+        'help|h' => \ my $help) or die("$basic_usage\n");
 
 
 if (defined $help) {
