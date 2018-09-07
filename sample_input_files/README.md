@@ -17,5 +17,30 @@ NC_003028       10531   11808   +       tRNA lysidine(34) synthetase TilS       
 [NC_003028.pooled.noTAP.s2](https://github.com/nikhilram/T4pipeline/blob/master/sample_input_files/NC_003028.pooled.noTAP.s2)         : Single nucleotide coverage from the 5'end unprocessed reads generated  
 
 [NC_003028.pooled.TAP.s2](https://github.com/nikhilram/T4pipeline/blob/master/sample_input_files/NC_003028.pooled.TAP.s2)           : Single nucleotide coverage from the 5'end processed reads generated
+```
+NC_003028       1       33      +       
+NC_003028       2       8       +       
+NC_003028       3       4       +       
+NC_003028       4       3       +       
+NC_003028       5       3       +       
+NC_003028       6       3       +       
+NC_003028       7       6       +       
+NC_003028       9       8       +       
+NC_003028       11      1       +       
+NC_003028       12      2       +       
+NC_003028       13      2       +       
+```
 
 [NC_003028.pooled-both.termseq.3p](https://github.com/nikhilram/T4pipeline/blob/master/sample_input_files/NC_003028.pooled-both.termseq.3p)  : Single nucleotide coverage from the 5' end of the 3' end reads generated
+```
+NC_003028 18	+	3
+NC_003028 48	-	1
+NC_003028	49	-	3
+NC_003028	50	-	4
+NC_003028	51	-	1
+NC_003028	52	-	1
+NC_003028	53	-	9
+NC_003028	55	-	3
+NC_003028	58	-	2
+NC_003028	59	-	4
+```
